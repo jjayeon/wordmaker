@@ -16,8 +16,8 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {},
-  "name": "draw-with-me-solo",
-  "description": "An easy mouse-drawing app in browser.",
+  "name": "jjy npm template",
+  "description": "The various npm packages used by developer jjy (jjayeon).",
   "version": "1.0.0",
   "main": "src/index.js",
   "scripts": {
@@ -29,8 +29,8 @@
     "type": "git",
     "url": "git+https://github.com/jjayeon/draw-with-me-solo.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "jjayeon",
+  "license": "Unlicense",
   "bugs": {
     "url": "https://github.com/jjayeon/draw-with-me-solo/issues"
   },
