@@ -9,6 +9,7 @@
     "eslint-config-prettier": "^6.11.0",
     "eslint-loader": "^4.0.2",
     "html-webpack-plugin": "^4.3.0",
+    "mocha": "^8.1.2",
     "prettier": "2.0.5",
     "prettier-webpack-plugin": "^1.2.0",
     "webpack": "^4.44.1",
@@ -16,14 +17,14 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {},
-  "name": "jjy npm template",
+  "name": "jjy-npm-template",
   "description": "The various npm packages used by developer jjy (jjayeon).",
   "version": "1.0.0",
   "main": "src/index.js",
   "scripts": {
     "start": "webpack-dev-server --config webpack.config.js --mode development",
     "build": "webpack --config webpack.config.js --mode production",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha src/tests/test.js"
   },
   "repository": {
     "type": "git",
