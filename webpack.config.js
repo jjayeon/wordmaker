@@ -36,7 +36,7 @@ module.exports = {
             template: "./src/index.html",
         }),
         new CleanWebpackPlugin(),
-        new PrettierWebpackPlugin(),
+        new PrettierWebpackPlugin({ tabWidth: 4 }),
     ],
     devServer: {
         contentBase: "./dist",
