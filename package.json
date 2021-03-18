@@ -29,12 +29,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jjayeon/draw-with-me-solo.git"
+    "url": "git+https://github.com/jjayeon/jjy-npm-template.git"
   },
   "author": "jjayeon",
   "license": "Unlicense",
   "bugs": {
-    "url": "https://github.com/jjayeon/draw-with-me-solo/issues"
+    "url": "https://github.com/jjayeon/jjy-npm-template/issues"
   },
-  "homepage": "https://github.com/jjayeon/draw-with-me-solo#readme"
+  "homepage": "https://github.com/jjayeon/jjy-npm-template#readme"
 }
