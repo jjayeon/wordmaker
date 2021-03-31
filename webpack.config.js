@@ -4,18 +4,13 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const PrettierWebpackPlugin = require("prettier-webpack-plugin");
+const ESLintPlugin = require("eslint-webpack-plugin");
 
 module.exports = {
     devtool: "source-map",
     entry: "./src/index.js",
     module: {
         rules: [
-            {
-                enforce: "pre",
-                test: /\.js$/,
-                exclude: /node_modules/,
-                loader: "eslint-loader",
-            },
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
@@ -32,11 +27,12 @@ module.exports = {
         ],
     },
     plugins: [
+        new CleanWebpackPlugin(),
+        new ESLintPlugin(),
+        new PrettierWebpackPlugin({ tabWidth: 4 }),
         new HtmlWebpackPlugin({
             template: "./src/index.html",
         }),
-        new CleanWebpackPlugin(),
-        new PrettierWebpackPlugin({ tabWidth: 4 }),
     ],
     devServer: {
         contentBase: "./dist",
