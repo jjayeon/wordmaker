@@ -1,6 +1,6 @@
-# jjy-npm-template
+# wordmaker
 
-A template npm project with some common packages installed and configured.
+Turning words into littler words.
 
 ## packages:
 
@@ -13,3 +13,5 @@ Babel for Javascript wrangling.
 ESLint and Prettier for code formatting.
 
 Mocha for unit tests.
+
+React for UI and logic.
